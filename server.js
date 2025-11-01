@@ -467,6 +467,11 @@ app.get("/api/mybookings", auth, (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("🎬 Movie Ticket Booking Backend is running successfully on Render!");
+});
+
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error('Unhandled error:', err);
